@@ -1,7 +1,5 @@
 package com.example.haunted.model;
 
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -11,18 +9,26 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertSame;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
+import java.util.List;
+import java.util.ArrayList;
 
 public class RoomTest {
 	private Room room;
-	private Weapon sword;
+	private Potion healing;
+	private Monster monster;
 	
 	@BeforeEach
 	void setup() {
 		room = new Room("hall", "Abandoned Lecture Hall", "desks");
-		sword = new Weapon("sword", "sharp", 10);
+		healing = new Potion("Healing", "yellow", 10);
+		
+		List<Item> loot = new ArrayList<>();
+		loot.add(healing);
+		monster = new Monster("Grog", 50, 40, 30, loot);
+		
+		room.addItem(healing);
+		room.addMonster(monster);
 	}
 	
 	//unlocking and key tests
@@ -71,15 +77,21 @@ public class RoomTest {
 	    assertEquals(otherRoom, room.getExit(Direction.NORTH));
 	}
 	
-	
-	//item (weapon) tests
+	//monster tests
 	@Test
-	void getDescriptionReturnsCorrect() {
-	    assertEquals("sharp", sword.getDescription());
+	void checkNewMonsterIsAlive() {
+		assertTrue(room.hasLivingMonsters());
 	}
 	
 	@Test
-	void toStringReturnsCorrect() {
-	    assertEquals("sword", sword.toString());
+	void makeSureListOfMonstersIsValid() {
+		List<Monster> monList = new ArrayList<>();
+		monList.add(monster);
+		
+		assertEquals(monList, room.getMonsters());
 	}
+	
+	
+
+	
 }
