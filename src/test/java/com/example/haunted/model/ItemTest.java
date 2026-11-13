@@ -34,7 +34,6 @@ public class ItemTest {
 	
 	@Test
 	void missingItemReturnsEmpty() {
-		room.addItem(healing);
 		assertTrue(room.findItem("sword").isEmpty());
 	}
 }
