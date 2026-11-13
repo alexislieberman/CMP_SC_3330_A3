@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>TrapResolver.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.example.haunted.rules;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.example.haunted.events.InteractionResult;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.example.haunted.model.Player;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.example.haunted.model.Trap;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class TrapResolver {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public InteractionResult resolveTrap(Player player, Trap trap) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_9'>2</a>
+<span>
+1. resolveTrap : negated conditional &rarr; KILLED<br/>
+2. resolveTrap : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (trap == null || !trap.isArmed()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_10'/>
+10
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_10'>1</a>
+<span>
+1. resolveTrap : replaced return value with null for com/example/haunted/rules/TrapResolver::resolveTrap &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return new InteractionResult(false, &#34;No trap was triggered.&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_13'>1</a>
+<span>
+1. resolveTrap : removed call to com/example/haunted/model/Player::takeDamage &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        player.takeDamage(trap.getDamage());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_14'>1</a>
+<span>
+1. resolveTrap : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (trap.isOneTimeTrigger()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_15'>1</a>
+<span>
+1. resolveTrap : removed call to com/example/haunted/model/Trap::disarm &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            trap.disarm();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_18'>1</a>
+<span>
+1. resolveTrap : replaced return value with null for com/example/haunted/rules/TrapResolver::resolveTrap &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new InteractionResult(true,</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                String.format(&#34;Trap &#39;%s&#39; triggered for %d damage.&#34;, trap.getName(), trap.getDamage()));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@178213b_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@178213b_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:noTrapDoesNothing()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:disarmedTrapDoesNothing()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_10'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:disarmedTrapDoesNothing()]</span></span> replaced return value with null for com/example/haunted/rules/TrapResolver::resolveTrap &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:oneTimeTrapDisarmsItselfAfterTriggering()]</span></span> removed call to com/example/haunted/model/Player::takeDamage &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:oneTimeTrapDisarmsItselfAfterTriggering()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:oneTimeTrapDisarmsItselfAfterTriggering()]</span></span> removed call to com/example/haunted/model/Trap::disarm &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@178213b_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@178213b_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>resolveTrap<br/><b>Killed by : </b>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:oneTimeTrapDisarmsItselfAfterTriggering()]</span></span> replaced return value with null for com/example/haunted/rules/TrapResolver::resolveTrap &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+<li class='mutator'>MATH_MUTATOR</li>
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+<li class='mutator'>NULL_RETURN_VALUES</li>
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.example.haunted.engine.GameEngineTest.[engine:junit-jupiter]/[class:com.example.haunted.engine.GameEngineTest]/[method:brokenElevatorTrapTriggersOnlyOnce()] (7 ms)</li><li>com.example.haunted.engine.MovementEngineTest.[engine:junit-jupiter]/[class:com.example.haunted.engine.MovementEngineTest]/[method:reusableTrapTriggersEveryEntry()] (3 ms)</li><li>com.example.haunted.engine.MovementEngineTest.[engine:junit-jupiter]/[class:com.example.haunted.engine.MovementEngineTest]/[method:oneTimeTrapOnlyTriggersOnFirstEntry()] (4 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:disarmedTrapDoesNothing()] (2 ms)</li><li>com.example.haunted.engine.MovementEngineTest.[engine:junit-jupiter]/[class:com.example.haunted.engine.MovementEngineTest]/[method:enteringRoomWithArmedTrapTriggersIt()] (4 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:oneTimeTrapDisarmsItselfAfterTriggering()] (3 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[test-template:armedTrapDamagesPlayer(java.lang.String, com.example.haunted.model.TrapType, int, int)]/[test-template-invocation:#3] (216 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[test-template:armedTrapDamagesPlayer(java.lang.String, com.example.haunted.model.TrapType, int, int)]/[test-template-invocation:#4] (219 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:reusableTrapTriggersEveryTime()] (12 ms)</li><li>com.example.haunted.config.DungeonFactoryTest.[engine:junit-jupiter]/[class:com.example.haunted.config.DungeonFactoryTest]/[method:connectionsAreWiredAsCoded()] (61 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[test-template:armedTrapDamagesPlayer(java.lang.String, com.example.haunted.model.TrapType, int, int)]/[test-template-invocation:#1] (20 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[method:noTrapDoesNothing()] (3 ms)</li><li>com.example.haunted.rules.TrapResolverTest.[engine:junit-jupiter]/[class:com.example.haunted.rules.TrapResolverTest]/[test-template:armedTrapDamagesPlayer(java.lang.String, com.example.haunted.model.TrapType, int, int)]/[test-template-invocation:#2] (11 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.6.8
+
+</body>
+</html>

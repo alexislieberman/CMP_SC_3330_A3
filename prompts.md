@@ -78,6 +78,8 @@ Prompts are listed in the order they were sent. Where a prompt was sent with a s
 9. how could i write test code to check the rooms are locked correctly
 10. how does items.stream work, where is the boolean return
 11. how to catch always true mutations for a return .add to list
+12. how to export EclEmma report
+13. how to export pit report from eclipse plugin
 
 --
 
